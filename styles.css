@@ -75,11 +75,9 @@ body{
 
 }
 .item1 path:nth-child(1){
-  stroke-dasharray:800px;
-  stroke-dashoffset:800px;
-  animation: rot1 3s ease 1;
+  animation: rot1 2.5s ease 0.2s forwards;
   stroke-dasharray: 3000px;
-  stroke-dashoffset:3000px;
+  stroke-dashoffset:0px;
 }
 .item11{
   position: absolute;
@@ -90,11 +88,9 @@ body{
 
 }
 .item11 path:nth-child(1){
-  stroke-dasharray:800px;
-  stroke-dashoffset:800px;
   stroke-dasharray: 3000px;
-  stroke-dashoffset:3000px;
-  animation: rot2 3.5s ease 1;
+  stroke-dashoffset:0px;
+  animation: rot2 3s ease 0.2s forwards;
 }
 
 @keyframes rot1 {
@@ -120,7 +116,7 @@ from{stroke-dashoffset:0}
 .item2 path:nth-child(1){
   stroke-dasharray: 850px;
   stroke-dashoffset:850px;
-  animation: ani 1.5s ease forwards;
+  animation: ani 1.5s ease 0.2s forwards;
 }
 .item2 path:nth-child(2){
   stroke-dasharray: 500px;
@@ -305,16 +301,20 @@ to{opacity: 1;}
 }
 .deskimg{
   position: fixed;
+  height: 100%;
+  width:100%;
   z-index: -3;
   opacity: 1;
 }
 .mobimg{
   position: fixed;
+width:100%;
+height: 100%;
   z-index: -3;
   opacity: 0;
 }
 @media (max-width:800px) {
-.desktop{
+.deskimg{
   opacity: 0;
 }
 .mobimg{
