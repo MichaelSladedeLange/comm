@@ -279,12 +279,14 @@ to{opacity: 1;}
   border-radius: 50%;
   border: 2px solid white;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .icon2{
   height: 100px;
   border-radius: 50%;
   border: 2px solid black;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .Section1{
   position: relative;
