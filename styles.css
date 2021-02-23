@@ -301,12 +301,25 @@ to{opacity: 1;}
   align-items: center;
   justify-content: center;
   /* background-color: black; */
-  background-image: url(images/back1.jpg);
+  background-color: transparent;
+}
+.deskimg{
+  position: fixed;
+  z-index: -3;
+  opacity: 1;
+}
+.mobimg{
+  position: fixed;
+  z-index: -3;
+  opacity: 0;
 }
 @media (max-width:800px) {
-  .Section1{
-      background-image: url(images/back2.jpg);
-  }
+.desktop{
+  opacity: 0;
+}
+.mobimg{
+  opacity: 1;
+}
 }
 .Head{
   position: relative;
